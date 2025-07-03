@@ -1,13 +1,13 @@
 moveit_setup_assistant_config:
   urdf:
     package: so_100_arm
-    relative_path: urdf/so_100_arm_5dof.urdf
+    relative_path: urdf/so_100_arm.urdf
   srdf:
     relative_path: config/so_100_arm.srdf
   package_settings:
     author_name: Bruk Gebregziabher
     author_email: bruk@signalbotics.com
-    generated_timestamp: 1741952847
+    generated_timestamp: 1749714518
   control_xacro:
     command:
       - position
@@ -17,9 +17,3 @@ moveit_setup_assistant_config:
   modified_urdf:
     xacros:
       - control_xacro
-  control_xacro:
-    command:
-      - position
-    state:
-      - position
-      - velocity

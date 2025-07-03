@@ -10,31 +10,31 @@ default_acceleration_scaling_factor: 0.1
 joint_limits:
   Elbow:
     has_velocity_limits: true
-    max_velocity: 1.0
+    max_velocity: 3.14
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 3.14
   Gripper:
     has_velocity_limits: true
-    max_velocity: 1.0
+    max_velocity: 3.14
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 3.14
   Shoulder_Pitch:
     has_velocity_limits: true
-    max_velocity: 1.0
+    max_velocity: 3.14
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 3.14
   Shoulder_Rotation:
     has_velocity_limits: true
-    max_velocity: 1.0
+    max_velocity: 3.14
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 3.14
   Wrist_Pitch:
     has_velocity_limits: true
-    max_velocity: 1.0
+    max_velocity: 3.14
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 3.14
   Wrist_Roll:
     has_velocity_limits: true
-    max_velocity: 1.0
+    max_velocity: 3.14
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 3.14

@@ -29,6 +29,13 @@
         <joint name="Wrist_Pitch" value="-0.3992"/>
         <joint name="Wrist_Roll" value="0"/>
     </group_state>
+    <group_state name="zero" group="arm">
+        <joint name="Elbow" value="0"/>
+        <joint name="Shoulder_Pitch" value="0"/>
+        <joint name="Shoulder_Rotation" value="0"/>
+        <joint name="Wrist_Pitch" value="0"/>
+        <joint name="Wrist_Roll" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="Fixed_Gripper" group="gripper"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
