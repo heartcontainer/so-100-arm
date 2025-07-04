@@ -7,7 +7,7 @@ controller_manager:
       type: joint_trajectory_controller/JointTrajectoryController
 
     gripper_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
+      type: position_controllers/GripperActionController
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -27,10 +27,4 @@ arm_controller:
     allow_nonzero_velocity_at_trajectory_end: true
 gripper_controller:
   ros__parameters:
-    joints:
-    - Gripper
-    command_interfaces:
-    - position
-    state_interfaces:
-    - position
-    allow_nonzero_velocity_at_trajectory_end: true
+    joint: Gripper
