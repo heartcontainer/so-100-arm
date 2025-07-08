@@ -19,7 +19,7 @@
     <group_state name="open" group="gripper">
         <joint name="Gripper" value="1.51"/>
     </group_state>
-    <group_state name="closed" group="gripper">
+    <group_state name="close" group="gripper">
         <joint name="Gripper" value="-0.1215"/>
     </group_state>
     <group_state name="home" group="arm">
