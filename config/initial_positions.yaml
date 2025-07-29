@@ -25,7 +25,7 @@ zero_positions:
   Gripper: 1661
 
 directions:
-  Shoulder_Rotation: 1
+  Shoulder_Rotation: -1
   Shoulder_Pitch: 1
   Elbow: 1
   Wrist_Pitch: 1
