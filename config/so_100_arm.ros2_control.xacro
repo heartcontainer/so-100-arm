@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:macro name="so_100_arm_ros2_control" params="name initial_positions_file use_fake_hardware" >
         <xacro:property name="initial_positions" value="${xacro.load_yaml(initial_positions_file)['initial_positions']}"/>
+        <xacro:property name="motor_ids" value="${xacro.load_yaml(initial_positions_file)['motor_ids']}"/>
         <xacro:property name="zero_positions" value="${xacro.load_yaml(initial_positions_file)['zero_positions']}"/>
         <xacro:property name="directions" value="${xacro.load_yaml(initial_positions_file)['directions']}"/>
 
@@ -23,6 +24,7 @@
                   <param name="initial_value">${initial_positions['Shoulder_Rotation']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <param name="motor_id">${motor_ids['Shoulder_Rotation']}</param>
                 <param name="zero_position">${zero_positions['Shoulder_Rotation']}</param>
                 <param name="direction">${directions['Shoulder_Rotation']}</param>
             </joint>
@@ -32,6 +34,7 @@
                   <param name="initial_value">${initial_positions['Shoulder_Pitch']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <param name="motor_id">${motor_ids['Shoulder_Pitch']}</param>
                 <param name="zero_position">${zero_positions['Shoulder_Pitch']}</param>
                 <param name="direction">${directions['Shoulder_Pitch']}</param>
             </joint>
@@ -41,6 +44,7 @@
                   <param name="initial_value">${initial_positions['Elbow']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <param name="motor_id">${motor_ids['Elbow']}</param>
                 <param name="zero_position">${zero_positions['Elbow']}</param>
                 <param name="direction">${directions['Elbow']}</param>
             </joint>
@@ -50,6 +54,7 @@
                   <param name="initial_value">${initial_positions['Wrist_Pitch']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <param name="motor_id">${motor_ids['Wrist_Pitch']}</param>
                 <param name="zero_position">${zero_positions['Wrist_Pitch']}</param>
                 <param name="direction">${directions['Wrist_Pitch']}</param>
             </joint>
@@ -59,6 +64,7 @@
                   <param name="initial_value">${initial_positions['Wrist_Roll']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <param name="motor_id">${motor_ids['Wrist_Roll']}</param>
                 <param name="zero_position">${zero_positions['Wrist_Roll']}</param>
                 <param name="direction">${directions['Wrist_Roll']}</param>
             </joint>
@@ -68,6 +74,7 @@
                   <param name="initial_value">${initial_positions['Gripper']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <param name="motor_id">${motor_ids['Gripper']}</param>
                 <param name="zero_position">${zero_positions['Gripper']}</param>
                 <param name="direction">${directions['Gripper']}</param>
             </joint>

@@ -8,6 +8,14 @@ initial_positions:
   Wrist_Roll: 0
   Gripper: 0
 
+motor_ids:
+  Shoulder_Rotation: 1
+  Shoulder_Pitch: 2
+  Elbow: 3
+  Wrist_Pitch: 4
+  Wrist_Roll: 5
+  Gripper: 6
+
 zero_positions:
   Shoulder_Rotation: 2126
   Shoulder_Pitch: 1984
